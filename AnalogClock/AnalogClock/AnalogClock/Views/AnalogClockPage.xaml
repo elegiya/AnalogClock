@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:AnalogClock.ViewModels;assembly=AnalogClock"
+             xmlns:system="clr-namespace:System;assembly=System.Runtime"
+             xmlns:behavior="clr-namespace:AnalogClock.Behavior;assembly=AnalogClock"
+             x:Class="AnalogClock.Views.AnalogClockPage">
+
+  <ContentPage.Behaviors>
+    <behavior:PageSizeBehavior />
+  </ContentPage.Behaviors>
+  
+  <AbsoluteLayout x:Name="absoluteLayout">
+    <AbsoluteLayout.BindingContext>
+            <viewModels:AnalogClockViewModel />
+        </AbsoluteLayout.BindingContext>
+    
+  </AbsoluteLayout>
+</ContentPage>
